@@ -7,6 +7,12 @@
   src: url(./assets/GothamSSm-Book_Web.woff2);
 }
 
+*, 
+*::before, 
+*::after{
+  box-sizing: border-box;
+}
+
 *{
   font-family: "Gotham Book", sans-serif;
 }
