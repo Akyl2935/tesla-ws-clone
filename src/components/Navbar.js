@@ -5,7 +5,7 @@ import InternetSignSVG from "../assets/InternetSignSVG";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className = "flex justify-between items-center px-12 p-4 text-sm font-bold">
       <div>
         <img
           className="h-3"
@@ -14,8 +14,8 @@ const Navbar = () => {
         />
       </div>
 
-      <div>
-        <ul>
+      <div className = "hidden lg:inline">
+        <ul className = "flex justify-center hover:cursor-pointer">
           <li className = "py-1 px-3 hover:rounded hover:bg-black/5">Vehicles</li>
           <li className = "py-1 px-3 hover:rounded hover:bg-black/5">Energy</li>
           <li className = "py-1 px-3 hover:rounded hover:bg-black/5">Charging</li>
@@ -24,8 +24,8 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div>
-        <ul>
+      <div className = "hidden lg:inline">
+        <ul className = "flex justify-center hover:cursor-pointer">
           <li className = "py-1 px-3 hover:rounded hover:bg-black/5"> 
             <QuestionSignSVG />
           </li>
@@ -36,6 +36,9 @@ const Navbar = () => {
             <InternetSignSVG />
           </li>
         </ul>
+      </div>
+      <div className = "lg:hidden">
+            <button className = "inline-flex items-center rounded-md py-2 px-4 text-sm font-medium bg:black/5 shadow-sm hover:bg-black/10">Menu</button>
       </div>
     </div>
   );
