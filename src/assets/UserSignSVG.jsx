@@ -1,5 +1,7 @@
-const userMarkSVG = () => {
-    return (
+import React from "react";
+
+const UserSignSVG = () => {
+    return(
         <svg class="tds-icon tds-icon-person" 
         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12
@@ -11,4 +13,4 @@ const userMarkSVG = () => {
     );
 };
 
-export default userMarkSVG
+export default UserSignSVG
