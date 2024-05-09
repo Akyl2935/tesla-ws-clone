@@ -4,7 +4,7 @@ import UserSignSVG from "../assets/UserSignSVG";
 import InternetSignSVG from "../assets/InternetSignSVG";
 
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <div>
       <div>
@@ -38,4 +38,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

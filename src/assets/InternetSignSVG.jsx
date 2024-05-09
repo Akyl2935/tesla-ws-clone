@@ -1,4 +1,5 @@
 import React from "react";
+import "./InternetSignSVG.css"
 
 const InternetSignSVG = () => {
     return(
