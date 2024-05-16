@@ -6,10 +6,10 @@ const Model = () => {
     <div>
       <div className="absolute inset-x-0 top-[15%] text-center">
         <h1 className="text-4xl font-bold">Model Y</h1>
-        <p className = "p-2">From <span className="underline underline-offset-4">$399/mo at 0.99 APR</span></p>
+        <p className = "p-2 text-sm">From <span className="underline underline-offset-4">$399/mo at 0.99 APR</span></p>
       </div>
 
-      <div>
+      <div className = "flex flex-col items-center justify-center text-sm lg:flex-row">
         <button>Order Now</button>
         <button>Demo Drive</button>
       </div>
