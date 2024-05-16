@@ -14,8 +14,8 @@ const Model = () => {
         <button className="bg-[#222222] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 text-white md:bg-opacity-65">Demo Drive</button>
       </div>
 
-      <div>
-        <FiChevronDown />
+      <div className="flex justify-center animate-bounce absolute inset-x-0 bottom-[3%]">
+        <FiChevronDown size = {24}/>
       </div>
     </div>
   );
