@@ -2,6 +2,7 @@ import React from "react";
 import QuestionSignSVG from "../assets/QuestionSignSVG";
 import UserSignSVG from "../assets/UserSignSVG";
 import InternetSignSVG from "../assets/InternetSignSVG";
+import { TfiClose } from "react-icons/tfi";
 
 const Navbar = () => {
   return (
@@ -41,6 +42,9 @@ const Navbar = () => {
       <div className = "lg:hidden">
             <button className = "inline-flex items-center rounded-md py-2 px-4 text-sm font-medium bg:black/5 shadow-sm hover:bg-black/10">Menu</button>
       </div>
+    <div className="bg-white absolute top-0 right-0 w-80 h-full z-10">
+      <div className="flex justify-end pr-8 pt-8"><TfiClose size = {28}/></div>
+    </div>
     </div>
   );
 };  
