@@ -43,7 +43,18 @@ const Navbar = () => {
             <button className = "inline-flex items-center rounded-md py-2 px-4 text-sm font-medium bg:black/5 shadow-sm hover:bg-black/10">Menu</button>
       </div>
     <div className="bg-white absolute top-0 right-0 w-80 h-full z-10">
-      <div className="flex justify-end pr-8 pt-8"><TfiClose size = {28}/></div>
+      <div className="flex justify-end pr-8 pt-8">
+      <TfiClose className="rounded p-1 hover:bg-black/5" size = {28}/></div>
+      <ul className="pt-8 px-6">
+      <li className="py-3 py-3 hover:bg-black/5"><a href = "">Vehicles</a></li>
+      <li className="py-3 py-3 hover:bg-black/5">Energy</li>
+      <li className="py-3 py-3 hover:bg-black/5">Charging</li>
+      <li className="py-3 py-3 hover:bg-black/5">Discover</li>
+      <li className="py-3 py-3 hover:bg-black/5">Shop</li>
+      <li className="py-3 py-3 hover:bg-black/5">Support</li>
+      <li className="py-3 py-3 hover:bg-black/5"><InternetSignSVG /></li>
+      <li className="py-3 py-3 hover:bg-black/5"><UserSignSVG /></li>
+      </ul>
     </div>
     </div>
   );
