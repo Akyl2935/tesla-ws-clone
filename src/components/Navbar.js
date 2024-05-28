@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import QuestionSignSVG from "../assets/QuestionSignSVG";
 import UserSignSVG from "../assets/UserSignSVG";
 import InternetSignSVG from "../assets/InternetSignSVG";
 import { TfiClose } from "react-icons/tfi";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
   return (
     <div className="flex justify-between items-center px-12 p-4 text-sm font-bold">
       <div>
