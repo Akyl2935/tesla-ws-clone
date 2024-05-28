@@ -5,7 +5,11 @@ import InternetSignSVG from "../assets/InternetSignSVG";
 import { TfiClose } from "react-icons/tfi";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false)
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
 
   return (
     <div className="flex justify-between items-center px-12 p-4 text-sm font-bold">
@@ -58,13 +62,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="lg:hidden">
-        <button className="inline-flex items-center rounded-md py-2 px-4 text-sm font-medium bg:black/5 shadow-sm hover:bg-black/10">
+        <button onClick = {handleNav} className="inline-flex items-center rounded-md py-2 px-4 text-sm font-medium bg:black/5 shadow-sm hover:bg-black/10">
           Menu
         </button>
       </div>
-      <div className="bg-white absolute top-0 right-0 w-80 h-full z-10">
+      <div className={ nav ? "bg-white absolute top-0 right-0 w-80 h-full z-10" : "fixed right-[100%]" }>
         <div className="flex justify-end pr-8 pt-8">
-          <TfiClose className="rounded p-1 hover:bg-black/5" size={28} />
+          <TfiClose  onClick = {handleNav} className="rounded p-1 hover:bg-black/5" size={28} />
         </div>
         <ul className="pt-8 px-6">
           <li className="py-3 py-3 hover:bg-black/5">
