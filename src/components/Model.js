@@ -15,11 +15,13 @@ const Model = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center text-sm lg:flex-row absolute inset-x-0 bottom-[10%] ">
-        <button className="bg-[#ffffff] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 font-bold"><a href="https://www.tesla.com/modely/design#overview">
-          Order Now</a>
+        <button className="bg-[#ffffff] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 font-bold">
+          <a href="https://www.tesla.com/modely/design#overview">Order Now</a>
         </button>
-        <button className="bg-[#222222] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 text-white md:bg-opacity-65"><a href = "https://www.tesla.com/drive?selectedModel=modely">
-          Demo Drive</a>
+        <button className="bg-[#222222] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 text-white md:bg-opacity-65">
+          <a href="https://www.tesla.com/drive?selectedModel=modely">
+            Demo Drive
+          </a>
         </button>
       </div>
 
